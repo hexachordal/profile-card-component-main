@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$d-cyan: hsl(185, 75%, 39%)
+$d-blue: hsl(229, 23%, 23%)
+$dg-blue: hsl(227, 10%, 46%)
+$d-gray: hsl(0, 0%, 59%)
+$f-size: 18px
+$f-heavy: 400
+$f-light: 700
+
+
+*
+    margin: 0
+    box-sizing: border-box
+    
+    body
+        display: flex
+        width: 100%
+        background-color: rgb(25,161,173)
+        height: 100vh
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg)
+        background-repeat: no-repeat
+        background-position: -30rem -30rem, 30rem 30rem
+        background-attachment: scroll
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        .card
+            display: grid
+            grid-template-rows: 2fr 2fr 1fr
+            font-family: 'Kumbh Sans', sans-serif
+            width: 18rem
+            background-color: white
+            height: 24rem
+            overflow: hidden
+            border-radius: 15px
+            
+            .card-tp
+                width: 100%
+                height: 100%
+            .card-md
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                img
+                    border-radius: 50%
+                    border: 2px solid white
+                header
+                    display: flex
+                    flex-direction: row
+                    align-items: baseline
+            .card-btm
+                width: 100%
+                height: 100%
+        
+        .attribution 
+            font-size: 11px
+            text-align: center
+            color: white
+            
+            a 
+                color: hsl(228, 45%, 44%) 
+    
+
+
+ 
